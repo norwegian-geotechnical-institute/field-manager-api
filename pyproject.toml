@@ -36,7 +36,6 @@ pandas = "^2.2.3"
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
 pytest-cov = "*"
-mypy = "*"
 bandit = "*"
 safety = "*"
 pip-licenses = "*"
