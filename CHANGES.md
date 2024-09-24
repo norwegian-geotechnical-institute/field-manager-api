@@ -1,3 +1,10 @@
+### Version 0.0.1a4
+
+_2024-09-24_
+
+FIX
+
+- adding a init file for better imports of FieldMangaerApi
 
 ### Version 0.0.1a3
 
