@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "field-manager-api"
-version = "0.0.1a1"
+version = "0.0.1a3"
 description = "Field Manager API SDK"
 license = "MIT"
 authors = ["Jostein Leira <9363084+josteinl@users.noreply.github.com>"]
@@ -30,6 +30,8 @@ selenium = "^4.24.0"
 webdriver-manager = "^4.0.2"
 docx = "^0.2.4"
 python-docx = "^1.1.2"
+shapely = "^2.0.6"
+pandas = "^2.2.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
