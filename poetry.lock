@@ -532,20 +532,6 @@ docs = ["ipython", "matplotlib", "numpydoc", "sphinx"]
 tests = ["pytest", "pytest-cov", "pytest-xdist"]
 
 [[package]]
-name = "docx"
-version = "0.2.4"
-description = "The docx module creates, reads and writes Microsoft Office Word 2007 docx files"
-optional = false
-python-versions = "*"
-files = [
-    {file = "docx-0.2.4.tar.gz", hash = "sha256:9d7595eac6e86cda0b7136a2995318d039c1f3eaa368a3300805abbbe5dc8877"},
-]
-
-[package.dependencies]
-lxml = "*"
-Pillow = ">=2.0"
-
-[[package]]
 name = "dparse"
 version = "0.6.4b0"
 description = "A parser for Python dependency files"
@@ -2774,4 +2760,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">3.10,<4.0"
-content-hash = "ab7f94bba133a55e58d647413dad623916e5990f8de20377d4b2b3788d227ad3"
+content-hash = "dc2e4e78caba50ba23224080ac43fd27c51954393194d3540bd7cc7c3bea0ade"
