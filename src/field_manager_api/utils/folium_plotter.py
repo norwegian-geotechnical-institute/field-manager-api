@@ -3,22 +3,28 @@ from folium.plugins import HeatMap
 
 
 class MapHandler:
-    def __init__(self, locations):
+    def __init__(self, locations, height="300px", width="100%", tiles="OpenTopoMap"):
         """
         Initialize the MapHandler with a list of locations.
         Each location should be a dictionary containing 'lat', 'lon', and optionally 'name', 'depth_base', and 'predictions'.
         """
         self.locations = locations
+        figure = folium.Figure(
+            width=width, height=height
+        )  # Adjust the dimensions as needed
         self.map = folium.Map(
-            location=[locations[0].lat, locations[0].lon], zoom_start=18
+            location=[locations[0].lat, locations[0].lon], zoom_start=18, tiles=tiles
         )
+        self.map.add_to(figure)
 
     def plot_locations(self):
         """Plot markers for each location on the map."""
-        for location in self.locations:
+        for ix, location in enumerate(self.locations):
             folium.Marker(
                 location=[location.lat, location.lon],
+                tooltip=location.get_html_description(location_ix=ix),
                 popup=location.name,
+                icon=folium.Icon(icon="asterisk", prefix="fa", color="blue"),
             ).add_to(self.map)
         return self.map
 
