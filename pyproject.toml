@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "field-manager-api"
-version = "0.0.1a5"
+version = "0.0.2"
 description = "Field Manager API SDK"
 license = "MIT"
 authors = ["Jostein Leira <9363084+josteinl@users.noreply.github.com>",
