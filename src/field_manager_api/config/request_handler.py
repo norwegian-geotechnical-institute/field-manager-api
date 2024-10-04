@@ -8,7 +8,7 @@ def get_request_handler(url: str, headers: dict):
 
         # Check if the request was successful
         if response.status_code == 200:
-            print("Request successful!")
+            # print("Request successful!")
             return (
                 response.json()
             )  # or response.text, based on the API's response format

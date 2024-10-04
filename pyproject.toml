@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "field-manager-api"
-version = "0.0.1a4"
+version = "0.0.1a5"
 description = "Field Manager API SDK"
 license = "MIT"
-authors = ["Jostein Leira <9363084+josteinl@users.noreply.github.com>","Tellef Kydland <48522922+tellefk@users.noreply.github.com>"]
+authors = ["Jostein Leira <9363084+josteinl@users.noreply.github.com>",
+            "Tellef Kydland <48522922+tellefk@users.noreply.github.com>",
+            "Ingeborg Gjerde <ingeborg.gjerde@gmail.com>"]
 readme = "README.md"
 homepage = "https://github.com/norwegian-geotechnical-institute/field-manager-api"
 repository = "https://github.com/norwegian-geotechnical-institute/field-manager-api"
@@ -19,8 +21,12 @@ packages = [
     { include = "field_manager_api", from="src" },
 ]
 
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
 [tool.poetry.dependencies]
-python = ">3.10,<4.0"
+python = "^3.12,<4.0"
 matplotlib = "^3.9.2"
 plotly = "^5.24.1"
 nbformat = "^5.10.4"
@@ -31,6 +37,8 @@ webdriver-manager = "^4.0.2"
 python-docx = "^1.1.2"
 shapely = "^2.0.6"
 pandas = "^2.2.3"
+jupyter = "^1.1.1"
+pyproj = "^3.6.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
@@ -39,10 +47,6 @@ bandit = "*"
 safety = "*"
 pip-licenses = "*"
 ruff = "*"
-
-[tool.ruff]
-line-length = 120
-src = ["src", "tests"]
 
 
 [build-system]
