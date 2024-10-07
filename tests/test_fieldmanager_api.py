@@ -11,4 +11,4 @@ def test_set_token_permission_error():
     with pytest.raises(
         PermissionError, match="Token authorization failed \(401 Unauthorized\)"
     ):
-        fm.get_projects()
+        fm.get_list_of_all_projects()
