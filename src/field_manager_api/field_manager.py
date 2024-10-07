@@ -2,6 +2,7 @@ import re
 from field_manager_api.auth.auth import set_bearer_token_header
 from field_manager_api.config.request_handler import get_request_handler
 from field_manager_api.locations.get_locations import get_locations_request
+from field_manager_api.methods import get_methods
 from field_manager_api.projects.get_projects import get_projects_request
 from field_manager_api.projects.get_projects import Project
 
